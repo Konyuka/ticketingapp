@@ -64,10 +64,15 @@ char toexit;
 	}
 
 }else{
+			char name;
 			printf("||================================================================||\n");
 			printf("Enter your Name:                                                    \n");
 			printf("||================================================================||\n");
+			scanf("%s",&name);
+			printf("Hello %s, Enter your password:\n",name);
+			return;
 }
+return;
 
 
 printf("Hello %s, Enter your password:\n",name);
