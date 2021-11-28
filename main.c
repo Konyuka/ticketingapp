@@ -22,27 +22,53 @@ int choice;
 	scanf("%d",&choice);
 //	return choice;
 
-if(choice = 1 )
+if(choice > 2 )
 
 {
 
-printf("Good Password");
+printf("ERROR: Value must be between 0 and 1 inclusive:\n");
 
+char toexit;
+	printf(" ==================================================================\n");
+	printf("                 Are you sure you want to exit? ([Y]es|[N]o):\n");
+	printf(" ==================================================================\n");
+	printf("  Enter your choice: ");
+	scanf("%d",&toexit);
+	
+	if(choice = "n" )
+	
+	{
+	
+	printf("ERROR: Value must be between 0 and 1 inclusive:\n");
+	
+	int login;
+		printf(" ==================================================================\n");
+		printf("                 Account Ticketing System - Login      \n              ");
+		printf(" ==================================================================\n");
+		printf("||             1) Login to the system           ||\n");
+		printf("||             0) Exit application              ||\n");
+		printf("||================================================================||\n");
+		printf("  Enter your choice:                                                  ");
+		printf("||================================================================||\n");
+		scanf("%d",&login);
+		
+		if(login = 1){
+			printf("||================================================================||\n");
+			printf("Enter your Name:                                                    \n");
+			printf("||================================================================||\n");
+            gets(name);
+		}
+	
+	}else{
+		return;
+	}
+
+}else{
+			printf("||================================================================||\n");
+			printf("Enter your Name:                                                    \n");
+			printf("||================================================================||\n");
 }
 
-else if(choice = 0)
-
-{
-
-printf("Badd Choice");
-
-}
-
-
-
-printf("Enter your Name: ");
-
-gets(name);
 
 printf("Hello %s, Enter your password:\n",name);
 
