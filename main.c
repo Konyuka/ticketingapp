@@ -6,6 +6,48 @@ int func1(){
 	trial = main();
 }
 
+int dashboard()
+{
+	int menu;
+	printf(" ==================================================================\n");
+	printf("                 Account Ticketing System -Agent Menu     \n");
+	printf(" ==================================================================\n");
+	printf("\n");
+	printf("||             1) Add a new account                       ||\n");
+	printf("||             2) Modify an existing account              ||\n");
+	printf("||             3) Remove an account                       ||\n");
+	printf("||             4) List accounts: detailed view            ||\n");
+	printf("\n");
+	printf("||================================================================||\n");
+	printf("||             5) List new tickets                        ||\n");
+	printf("||             6) List Active Tickets                     ||\n");
+	printf("||             7) List closed tickets                     ||\n");
+	printf("||             8) Add a new ticket                        ||\n");
+	printf("||             9) Manage a Ticket                         ||\n");
+	printf("\n");
+	printf("||================================================================||\n");
+	printf("  0) Logout                                                \n");
+	printf("||================================================================||\n");
+	printf("\n");
+	printf("||================================================================||\n");
+	printf("  Enter your choice:                                                  \n");
+	scanf("%d",&menu);
+	printf("||================================================================||\n");
+
+	if(menu == 1)
+	{
+		printf("  Menu 1                                                 \n");
+	}
+	if (menu == 2)
+	{
+		printf("  Menu 2                                                 \n");
+	}
+	if (menu == 3)
+	{
+		printf("  Menu 3                                                 \n");
+	}
+}
+
 int main()
 
 {
@@ -97,9 +139,16 @@ char toexit;
 			if (pass == 3)
 			{
 				printf("||================================================================||\n");
-				printf("Logging in \n");
+				printf("\n");
+				printf("Logging in........ \n");
+				printf("\n");
+				printf("AGENT: Will Smith (50008) \n");
 				printf("||================================================================||\n");
-				return;
+				printf("\n");
+				printf("||================================================================||\n");
+				int trial;
+				trial = dashboard();
+				// return;
 			}
 			else
 			{
