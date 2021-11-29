@@ -1,6 +1,12 @@
 #include<stdio.h>
 #include<string.h>
 
+int func1(){
+	int trial;
+	trial = main();
+	return;
+}
+
 void main()
 
 {
@@ -104,6 +110,8 @@ char toexit;
 			}			
 				
 			// printf("Hello %s, Enter your password:\n",name);
+			int trial;
+			trial = func1();
 			return;
 }
 return;
