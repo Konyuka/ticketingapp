@@ -4,10 +4,9 @@
 int func1(){
 	int trial;
 	trial = main();
-	return;
 }
 
-void main()
+int main()
 
 {
 
@@ -38,7 +37,7 @@ char toexit;
 	printf("  Enter your choice: ");
 	scanf("%d",&toexit);
 
-	if (toexit == "n")
+	if (toexit == 'n')
 
 	{
 		
@@ -76,131 +75,55 @@ char toexit;
 
 			if (account == 1)
 			{
-				char user;
+				int user;
 				printf("||================================================================||\n");
 				printf("  Enter the User Login:                                                    \n");
 				printf("||================================================================||\n");
-				scanf("%s", &user);
+				scanf("%d",&user);
 				// return user;
 
-				if(user == "me"){
-					char pass;
-					printf("||================================================================||\n");
-					printf("  Enter the Account Password:                                                    \n");
-					printf("||================================================================||\n");
-					scanf("%s", &pass);
+				if(user == 2){
 
-					if (pass == 1)
-					{
-						 printf("Logging in");
-						//  return;
-					}
-					else
-					{
-						 printf("Wrong Creds");
-						//  return;
-					}
+					
 				}
+			}
+
+			int pass;
+			printf("||================================================================||\n");
+			printf("  Enter the Account Password:                                                    \n");
+			printf("||================================================================||\n");
+			scanf("%d",&pass);
+
+			if (pass == 3)
+			{
+				printf("Logging in");
+				return;
 			}
 			else
 			{
-				printf("Wrong Credentials                    \n");
+				printf("Wrong Creds");
+				int trial;
+				trial = func1();
+				//  return;
+			}
+
+			// else
+			// {
+				// printf("Wrong Credentials                    \n");
 				// account();
 				// account;
-			}			
+				// return;
+			// }			
 				
 			// printf("Hello %s, Enter your password:\n",name);
 			int trial;
 			trial = func1();
-			return;
-}
-return;
-
-
-printf("Hello %s, Enter your password:\n",name);
-
-gets(pwd);
-
-a=strlen(pwd);
-
-if(a<5)
-
-{
-
-printf("Error: Password should contain contain minimum 5 characters ");
-
+			// return;
 }
 
-else if(a>12)
+return 0;
 
-{
 
-printf("Error: Password shouldn't exceed 12 characters ");
 
-}
-
-else
-
-{
-
-for(i=0;pwd[i]!=NULL;i++)
-
-{
-
-if(pwd[i]>='A' && pwd[i]<='Z')
-
-up++;
-
-if(pwd[i]>='a' && pwd[i]<='z')
-
-low++;
-
-if(pwd[i]>='0' && pwd[i]<='9')
-
-digi++;
-
-if(pwd[i]=='@'||pwd[i]=='#'||pwd[i]=='$')
-
-schar++;
-
-}
-
-}
-
-if(up==0)
-
-printf("There must be at least one Uppercase\n");
-
-if(low==0)
-
-printf("There must be at least one Lowercase\n");
-
-if(digi==0)
-
-printf("There must be at least one Digit\n");
-
-if(schar==0)
-
-printf("There must be at least one Special Character\n");
-
-else
-
-{
-
-printf("Confirm your Password\n");
-
-gets(ver);
-
-if(strcmp(pwd,ver)==0)
-
-printf("Welcome %s, your is Password Verified",name);
-
-else
-
-printf("Password did not match");
-
-}
-
-getch();
 
 }
