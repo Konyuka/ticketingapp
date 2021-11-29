@@ -1,7 +1,4 @@
-//C Program to Validate Password
-
 #include<stdio.h>
-
 #include<string.h>
 
 void main()
@@ -34,13 +31,11 @@ char toexit;
 	printf(" ==================================================================\n");
 	printf("  Enter your choice: ");
 	scanf("%d",&toexit);
-	
-	if(choice = "n" )
-	
+
+	if (toexit == "n")
+
 	{
-	
-	printf("ERROR: Value must be between 0 and 1 inclusive:\n");
-	
+		
 	int login;
 		printf(" ==================================================================\n");
 		printf("                 Account Ticketing System - Login      \n              ");
@@ -52,11 +47,14 @@ char toexit;
 		printf("||================================================================||\n");
 		scanf("%d",&login);
 		
-		if(login = 1){
-			printf("||================================================================||\n");
-			printf("Enter your Name:                                                    \n");
-			printf("||================================================================||\n");
-            gets(name);
+		if(login == 1){
+			
+//			printf("||================================================================||\n");
+//			printf("Enter your Name:                                                    \n");
+//			printf("||================================================================||\n");
+//            gets(name);
+
+			return;
 		}
 	
 	}else{
@@ -64,12 +62,48 @@ char toexit;
 	}
 
 }else{
-			char name;
+			int account;
 			printf("||================================================================||\n");
-			printf("Enter your Name:                                                    \n");
-			printf("||================================================================||\n");
-			scanf("%s",&name);
-			printf("Hello %s, Enter your password:\n",name);
+			printf("  Enter The Account:                                                    \n");
+			printf("||================================================================||\n\n");
+			scanf("%d",&account);
+
+			if (account == 1)
+			{
+				char user;
+				printf("||================================================================||\n");
+				printf("  Enter the User Login:                                                    \n");
+				printf("||================================================================||\n");
+				scanf("%s", &user);
+				// return user;
+
+				if(user == "me"){
+					char pass;
+					printf("||================================================================||\n");
+					printf("  Enter the Account Password:                                                    \n");
+					printf("||================================================================||\n");
+					scanf("%s", &pass);
+
+					if (pass == 1)
+					{
+						 printf("Logging in");
+						//  return;
+					}
+					else
+					{
+						 printf("Wrong Creds");
+						//  return;
+					}
+				}
+			}
+			else
+			{
+				printf("Wrong Credentials                    \n");
+				// account();
+				// account;
+			}			
+				
+			// printf("Hello %s, Enter your password:\n",name);
 			return;
 }
 return;
